@@ -6,11 +6,11 @@ import ListOfGoals from './ListOfGoals';
 const App = () => {
 
   const [allGoals, setAllGoals] = useState([]);
-
+  console.log(allGoals)
   return (
     <div id="main">
-      <GoalForm />
-      <ListOfGoals />
+      <GoalForm allGoals={allGoals} setAllGoals={setAllGoals} />
+      <ListOfGoals allGoals={allGoals}/>
     </div>
   )
   
